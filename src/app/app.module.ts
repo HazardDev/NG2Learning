@@ -4,17 +4,27 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { TakesData } from './components/takes-data/takes-data.component';
+import { SafePipe } from './components/safepipe/safe-pipe.pipe'
+import { UpperPipe } from './components/upper-case-pipe/upper-case.pipe';
+import { ExampleService } from './components/example-service/example.service';
+import { HighlightDirective } from './components/example-directive/highlight.directive';
+import { ReversePipe } from './components/reversepipe/reverse.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TakesData,
+    SafePipe,
+    HighlightDirective,
+    ReversePipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ExampleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
