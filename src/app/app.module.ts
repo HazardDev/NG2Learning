@@ -10,6 +10,7 @@ import { UpperPipe } from './components/upper-case-pipe/upper-case.pipe';
 import { ExampleService } from './components/example-service/example.service';
 import { HighlightDirective } from './components/example-directive/highlight.directive';
 import { ReversePipe } from './components/reversepipe/reverse.pipe';
+import { TestPipeGenPipe } from './test-pipe-gen.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ReversePipe } from './components/reversepipe/reverse.pipe';
     TakesData,
     SafePipe,
     HighlightDirective,
-    ReversePipe
+    ReversePipe,
+    TestPipeGenPipe
   ],
   imports: [
     BrowserModule,
