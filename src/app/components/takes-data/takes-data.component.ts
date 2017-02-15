@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
 export class TakesData {
 
 	@Input("username") username: string;
+	@Input("colorIsActive") colorIsActive: boolean;
 	
 }

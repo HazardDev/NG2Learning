@@ -1,1 +1,2 @@
-<takes-data *ngFor="let username of channels" [username]="username"></takes-data>
+<div style="display: inline-block;">Color Active: <input type="checkbox" [(ngModel)]="colorIsActive"></div>
+<takes-data *ngFor="let username of channels" [username]="username" [colorIsActive]="colorIsActive"></takes-data>

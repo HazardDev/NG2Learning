@@ -1,6 +1,7 @@
 <div>
-	Regular: <div>{{username}}</div>
-	Colored: <div myBlueHighlight>{{username}}</div>
-	Reversed: <div>{{username | reverse}}</div>
+	Regular: <div style="display: inline-block;">{{username}}</div><br>
+	Colored: <div style="display: inline-block;" myBlueHighlight>{{username}}</div><br>
+	Reversed: <div style="display: inline-block;">{{username | reverse}}</div><br>
+	Dynamic Class: <div style="display: inline-block;" [ngClass]="{'dynamic-color': colorIsActive}">{{username}}</div>
 	<br><br>
 </div>

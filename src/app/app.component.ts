@@ -8,6 +8,7 @@ import { ExampleService } from "./components/example-service/example.service";
 })
 export class AppComponent implements OnInit {
 
+	colorIsActive: boolean;
     channels: string;
 
     constructor(private exampleService: ExampleService) { }
